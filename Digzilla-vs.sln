@@ -1,0 +1,57 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2012
+VisualStudioVersion = 14.0.0.0
+MinimumVisualStudioVersion = 12.0.0.0
+Project("{E364E616-39F6-7DA6-F66C-4148A81AE85A}") = "Digzilla", "Digzilla-vs.vcxproj", "{3E7907EC-5F8C-75B2-4C10-8826CBFE722C}"
+EndProject
+Project("{E364E616-39F6-7DA6-F66C-4148A81AE85A}") = "ZillaLib", "..\ZillaLib\ZillaLib-vs.vcxproj", "{2177A217-7A21-77A2-177A-2177A2177777}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+		WebAssembly-Debug|Win32 = WebAssembly-Debug|Win32
+		WebAssembly-Release|Win32 = WebAssembly-Release|Win32
+		WebAssembly-Debug|x64 = WebAssembly-Debug|x64
+		WebAssembly-Release|x64 = WebAssembly-Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E7907EC-5F8C-75B2-4C10-8826CBFE722C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3E7907EC-5F8C-75B2-4C10-8826CBFE722C}.Debug|Win32.Build.0 = Debug|Win32
+		{3E7907EC-5F8C-75B2-4C10-8826CBFE722C}.Release|Win32.ActiveCfg = Release|Win32
+		{3E7907EC-5F8C-75B2-4C10-8826CBFE722C}.Release|Win32.Build.0 = Release|Win32
+		{3E7907EC-5F8C-75B2-4C10-8826CBFE722C}.Debug|x64.ActiveCfg = Debug|x64
+		{3E7907EC-5F8C-75B2-4C10-8826CBFE722C}.Debug|x64.Build.0 = Debug|x64
+		{3E7907EC-5F8C-75B2-4C10-8826CBFE722C}.Release|x64.ActiveCfg = Release|x64
+		{3E7907EC-5F8C-75B2-4C10-8826CBFE722C}.Release|x64.Build.0 = Release|x64
+		{3E7907EC-5F8C-75B2-4C10-8826CBFE722C}.WebAssembly-Debug|Win32.ActiveCfg = WebAssembly-Debug|Win32
+		{3E7907EC-5F8C-75B2-4C10-8826CBFE722C}.WebAssembly-Debug|Win32.Build.0 = WebAssembly-Debug|Win32
+		{3E7907EC-5F8C-75B2-4C10-8826CBFE722C}.WebAssembly-Release|Win32.ActiveCfg = WebAssembly-Release|Win32
+		{3E7907EC-5F8C-75B2-4C10-8826CBFE722C}.WebAssembly-Release|Win32.Build.0 = WebAssembly-Release|Win32
+		{3E7907EC-5F8C-75B2-4C10-8826CBFE722C}.WebAssembly-Debug|x64.ActiveCfg = WebAssembly-Debug|Win32
+		{3E7907EC-5F8C-75B2-4C10-8826CBFE722C}.WebAssembly-Debug|x64.Build.0 = WebAssembly-Debug|Win32
+		{3E7907EC-5F8C-75B2-4C10-8826CBFE722C}.WebAssembly-Release|x64.ActiveCfg = WebAssembly-Release|Win32
+		{3E7907EC-5F8C-75B2-4C10-8826CBFE722C}.WebAssembly-Release|x64.Build.0 = WebAssembly-Release|Win32
+		{2177A217-7A21-77A2-177A-2177A2177777}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2177A217-7A21-77A2-177A-2177A2177777}.Debug|Win32.Build.0 = Debug|Win32
+		{2177A217-7A21-77A2-177A-2177A2177777}.Release|Win32.ActiveCfg = Release|Win32
+		{2177A217-7A21-77A2-177A-2177A2177777}.Release|Win32.Build.0 = Release|Win32
+		{2177A217-7A21-77A2-177A-2177A2177777}.Debug|x64.ActiveCfg = Debug|x64
+		{2177A217-7A21-77A2-177A-2177A2177777}.Debug|x64.Build.0 = Debug|x64
+		{2177A217-7A21-77A2-177A-2177A2177777}.Release|x64.ActiveCfg = Release|x64
+		{2177A217-7A21-77A2-177A-2177A2177777}.Release|x64.Build.0 = Release|x64
+		{2177A217-7A21-77A2-177A-2177A2177777}.WebAssembly-Debug|Win32.ActiveCfg = WebAssembly-Debug|Win32
+		{2177A217-7A21-77A2-177A-2177A2177777}.WebAssembly-Debug|Win32.Build.0 = WebAssembly-Debug|Win32
+		{2177A217-7A21-77A2-177A-2177A2177777}.WebAssembly-Release|Win32.ActiveCfg = WebAssembly-Release|Win32
+		{2177A217-7A21-77A2-177A-2177A2177777}.WebAssembly-Release|Win32.Build.0 = WebAssembly-Release|Win32
+		{2177A217-7A21-77A2-177A-2177A2177777}.WebAssembly-Debug|x64.ActiveCfg = WebAssembly-Debug|Win32
+		{2177A217-7A21-77A2-177A-2177A2177777}.WebAssembly-Debug|x64.Build.0 = WebAssembly-Debug|Win32
+		{2177A217-7A21-77A2-177A-2177A2177777}.WebAssembly-Release|x64.ActiveCfg = WebAssembly-Release|Win32
+		{2177A217-7A21-77A2-177A-2177A2177777}.WebAssembly-Release|x64.Build.0 = WebAssembly-Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
