@@ -214,7 +214,7 @@ static void AddMapRows(int max_depth)
 	{
 		float dirtChance    =                ZL_Math::MapClamped((float)y, 0,  100, .9f, 1.4f);
 		float rockChance    = dirtChance   + ZL_Math::MapClamped((float)y, 0,  100, .08f, .6f);
-		float bronzeChance  = rockChance   + ZL_Math::MapClamped((float)y, 0,  100, .05f, .5f);
+		float bronzeChance  = rockChance   + ZL_Math::MapClamped((float)y, 0,  100, .05f, .5f) + (y <= 10 ? .05f : 0);
 		float silverChance  = bronzeChance + (y < 10 ? 0 : ZL_Math::MapClamped((float)y, 10, 100, .06f, .4f));
 		float goldChance    = silverChance + (y < 20 ? 0 : ZL_Math::MapClamped((float)y, 20, 100, .05f, .3f));
 		float diamondChance = goldChance   + (y < 30 ? 0 : ZL_Math::MapClamped((float)y, 30, 100, .05f, .2f));
@@ -619,7 +619,7 @@ static void Update()
 		if (elevatorY < oldY)
 		{
 			int elevatorTi = (int)-elevatorY * WORLD_WIDTH + WORLD_WIDTH - 1;
-			if (Map[elevatorTi] != TILE_EMPTY) Empty(elevatorTi);
+			if (Map[elevatorTi] != TILE_EMPTY && elevatorTi/WORLD_WIDTH < ElevatorDepth) Empty(elevatorTi);
 		}
 	}
 }
@@ -773,10 +773,9 @@ static void Draw()
 	for (int i = 0; i != 10; i++)
 	{
 		float y = (float)(-ElevatorDepth+i*darkRows);
-		ZL_Display::FillRect(0, y, WORLD_WIDTH, y+darkRows, ZLLUMA(0, (10-i)/11.0f));
+		ZL_Display::FillRect(0, y, WORLD_WIDTH, y+darkRows, ZLLUMA(0, (10-i)/12.f));
 	}
-	ZL_Display::FillRect(0, -ElevatorDepth-999.f, WORLD_WIDTH, (float)-ElevatorDepth, ZL_Color::Black);
-
+	ZL_Display::FillRect(0, -ElevatorDepth-999.f, WORLD_WIDTH, (float)-ElevatorDepth, ZLLUMA(0,.92f));
 
 	#ifdef ZILLALOG
 	//for (ZL_Vector& p : colsh) ZL_Display::FillRect(p.x-.05f,p.y-.5f,p.x+.05f,p.y+.5f, ZLRGBA(1,0,0,.5));
